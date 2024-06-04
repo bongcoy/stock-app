@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   devtools: {enabled: true},
   modules: ["@nuxtjs/tailwindcss", "@nuxt/ui"],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   tailwindcss: {
     cssPath: ["./assets/css/tailwind.css", {injectPosition: "first"}],
     configPath: "tailwind.config",
