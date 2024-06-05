@@ -1,69 +1,38 @@
 <template>
-  <div class="flex min-h-screen">
-    <!-- Sidebar -->
-    <div class="w-64 bg-gray-800">
-      <div class="px-4 py-6">
-        <h2 class="text-2xl font-bold text-white">Application Name</h2>
-        <nav class="mt-6">
-          <a
-            href="#"
-            class="block px-4 py-2 mt-2 text-sm font-semibold text-white rounded hover:bg-gray-700"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="block px-4 py-2 mt-2 text-sm font-semibold text-white rounded hover:bg-gray-700"
-            >Product</a
-          >
-        </nav>
+  <div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="p-6 bg-white rounded shadow-md w-80">
+      <div class="flex justify-center mb-6">
+        <div class="w-12 h-12 bg-gray-300"></div>
       </div>
-    </div>
-    <!-- Main Content -->
-    <div class="flex-1 p-6 bg-gray-100">
-      <div class="flex justify-between items-center mb-6">
-        <h1 class="text-2xl font-bold">Product</h1>
+      <h1 class="mb-4 text-2xl font-bold text-center">Application Name</h1>
+      <form>
+        <div class="mb-4">
+          <label class="block mb-2 text-sm font-bold" for="username"
+            >Username</label
+          >
+          <input
+            class="w-full px-3 py-2 border rounded"
+            id="username"
+            type="text"
+          />
+        </div>
+        <div class="mb-6">
+          <label class="block mb-2 text-sm font-bold" for="password"
+            >Password</label
+          >
+          <input
+            class="w-full px-3 py-2 border rounded"
+            id="password"
+            type="password"
+          />
+        </div>
         <button
-          class="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700"
+          class="w-full px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700"
+          type="submit"
         >
-          + New product
+          Login
         </button>
-      </div>
-      <table class="w-full bg-white rounded shadow">
-        <thead>
-          <tr class="border-b">
-            <th class="px-4 py-2 text-left">Title</th>
-            <th class="px-4 py-2 text-left">Description</th>
-            <th class="px-4 py-2 text-left">Category</th>
-            <th class="px-4 py-2 text-left">Price</th>
-            <th class="px-4 py-2 text-left">Stock</th>
-            <th class="px-4 py-2 text-left">Edit</th>
-            <th class="px-4 py-2 text-left">Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b">
-            <td class="px-4 py-2">Sample Title</td>
-            <td class="px-4 py-2">Sample Description</td>
-            <td class="px-4 py-2">Category</td>
-            <td class="px-4 py-2">$100</td>
-            <td class="px-4 py-2">20</td>
-            <td class="px-4 py-2">
-              <button
-                class="px-2 py-1 text-white bg-yellow-500 rounded hover:bg-yellow-700"
-              >
-                Edit
-              </button>
-            </td>
-            <td class="px-4 py-2">
-              <button
-                class="px-2 py-1 text-white bg-red-500 rounded hover:bg-red-700"
-              >
-                Delete
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      </form>
     </div>
   </div>
 </template>
