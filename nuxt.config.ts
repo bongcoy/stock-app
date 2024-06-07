@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: {enabled: true},
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/ui"],
+  modules: ["@nuxtjs/tailwindcss"],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -16,8 +16,5 @@ export default defineNuxtConfig({
     },
     config: {},
     viewer: true,
-  },
-  colorMode: {
-    preference: "light",
   },
 });
